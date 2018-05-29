@@ -10,6 +10,7 @@ public class SecondScreen extends AppCompatActivity {
 
 
     public Button mainM;
+    public Button scannerC;
 
     public void buttonM(){
 
@@ -24,11 +25,24 @@ public class SecondScreen extends AppCompatActivity {
         });
     }
 
+    public void buttonS(){
+
+        scannerC= findViewById(R.id.scanner);
+        scannerC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent menuS = new Intent(SecondScreen.this, CamApp.class);
+
+                startActivity(menuS);
+            }
+        });
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
         buttonM();
+        buttonS();
     }
 
 
