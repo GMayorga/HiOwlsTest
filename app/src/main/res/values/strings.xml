@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">HiOwlTest</string>
     <string name="start_stop">Start/Stop</string>
-    <string name="HiOwls">HiOwls</string>
+    <string name="hiOwls">hiOwls</string>
     <string name="facial_recognition">Facial Recognition</string>
     <string name="todo">TODO</string>
 </resources>

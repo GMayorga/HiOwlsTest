@@ -11,15 +11,15 @@ public class SecondScreen extends AppCompatActivity {
 
     public Button mainM;
 
-    public void button(){
+    public void buttonM(){
 
         mainM= findViewById(R.id.mainM);
         mainM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent camera = new Intent(SecondScreen.this, MainActivity.class);
+                Intent menuM = new Intent(SecondScreen.this, MainActivity.class);
 
-                startActivity(camera);
+                startActivity(menuM);
             }
         });
     }
@@ -28,6 +28,7 @@ public class SecondScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second_screen);
+        buttonM();
     }
 
 
