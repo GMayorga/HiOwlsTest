@@ -1,17 +1,28 @@
 package com.example.gabriella.hiowlstest;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Color;
+import android.media.Image;
 import android.net.Uri;
+import android.os.Build;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class CamApp extends AppCompatActivity {
     private static final int PICK_IMAGE = 100;
     private ImageView imageView;
     public Button pers, menuB;
+
 
 
     @Override
@@ -28,6 +39,7 @@ public class CamApp extends AppCompatActivity {
                 openGallery();
             }
         });
+
 
         infoPers();
         menuButton();
@@ -78,5 +90,5 @@ public class CamApp extends AppCompatActivity {
                 startActivity(menuBu);
             }
         });
-    }
-}
+    }}
+
